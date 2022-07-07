@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.header {
+  display: flex;
+  background-color: #ffa500;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1 {
+  color: white;
+  margin: 0.5rem 8rem;
+}
+img {
+  width: 40px;
+  height: 40px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  margin: 0.5rem 8rem;
+}
+.footer {
+  text-align: center;
+  width: 100vw;
+  font-size: larger;
+  padding: 1rem;
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+.plus {
+  color: rgb(255, 242, 4);
+  border-radius: 50%;
+  background-color: white;
+  padding: 0.2rem;
+  font-weight: bolder;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.189);
+  border: 1px solid white;
+  box-sizing: content-box;
+}
+.main_note {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.189);
+  margin: 1rem auto;
+  width: 30%;
+  padding: 1rem;
+  text-align: center;
+}
+.main_note form {
+  display: flex;
+  flex-direction: column;
+}
+.main_note form input,
+textarea {
+  margin: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.main_note:hover {
+  background-color: aqua;
+}
+.main_note form input {
+  font-size: larger;
+  font-weight: bold;
+}
+.main_note .plus:hover {
+  color: #fff;
+  background-color: #ffa500;
+}
+.note {
+  display: inline-block;
+
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.222);
+  width: 20%;
+  margin: 1rem;
+  text-align: left;
+  padding: 1rem;
+  position: relative;
+}
+.note p {
+  margin: 0.3rem;
+}
+.note:hover {
+  background-color: rgb(174, 253, 15);
+}
+.Delete-icons {
+  border-radius: 50%;
+  background-color: azure;
+  padding: 0.5rem;
+  box-sizing: content-box;
+  position: absolute;
+  left: 420%;
+  top: 65%;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.222);
+}
+.Delete-icons:hover {
+  color: crimson;
+  background-color: rgba(0, 0, 0, 0.229);
+}
+@media (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  img {
+    margin: 0.3rem 2rem;
+  }
+  .header h1 {
+    margin: 0.3rem 2rem;
+    font-size: large;
+  }
+  .main_note {
+    width: 90vw;
+    float: none;
+    margin: 1rem auto;
+  }
+  .main_note form input {
+    font-size: 2.3rem;
+  }
+  .main_note form textarea {
+    font-size: 1.6rem;
+  }
+  .note {
+    width: 90vw;
+    margin: 1rem 2rem;
+  }
+  .note h1 {
+    font-size: 2rem;
+  }
+  .note p {
+    font-size: 1.5rem;
+  }
+  .note Button {
+    position: absolute;
+    top: 75%;
+    left: 12%;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
